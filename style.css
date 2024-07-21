@@ -46,10 +46,10 @@ body {
 }
 
 .container {
-   max-width: 30rem;
+   max-width: 35rem;
    border-radius: .75rem;
    background-color: var(--White);
-   margin: 2rem;
+   margin: 10rem;
    padding: 1.5rem;
 }
 

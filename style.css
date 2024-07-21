@@ -185,6 +185,11 @@ td {
       margin: 0;
       box-sizing: border-box;
       background-color: var(--White);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+
    }
 
    .container {

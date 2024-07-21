@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --White: hsl(0, 0%, 100%);
+   --Stone-100: hsl(30, 54%, 90%);
+   --Stone-150: hsl(30, 18%, 87%);
+   --Stone-600: hsl(30, 10%, 34%);
+   --Stone-900: hsl(24, 5%, 18%);
+   --Brown-800: hsl(14, 45%, 36%);
+   --Rose-800: hsl(332, 51%, 32%);
+   --Rose-50: hsl(330, 100%, 98%);
+}
+
+img {
+   max-width: 100%;
+}
+
+h1,
+h2 {
+   font-family: 'Young Serif', serif;
+}
+
+h2 {
+   color: var(--Brown-800);
+   font-weight: 400;
+   font-size: 1.5rem;
+   margin: 1rem 0;
+}
+
+hr {
+   border: 1px solid var(--Stone-150);
+}
+
+body {
+   font-family: 'Outfit', sans-serif;
+   background-color: var(--Stone-100);
+   display: grid;
+   place-content: center;
+   min-height: 100vh;
+}
+
+.container {
+   max-width: 30rem;
+   border-radius: .75rem;
+   background-color: var(--White);
+   margin: 2rem;
+   padding: 1.5rem;
+}
+
+.container img {
+   border-radius: .5rem;
+   height: auto;
+}
+
+
+
+.description h1 {
+
+   color: var(--Stone-900);
+   margin: 1rem 0;
+}
+
+.description p {
+   color: var(--Stone-600);
+   margin-bottom: 1.5rem;
+   font-size: .8125rem;
+   line-height: 1.5;
+}
+
+.preparation-time {
+   margin-bottom: 1.5rem;
+   max-width: 30rem;
+   border-radius: .25rem;
+   padding: 1rem;
+   background-color: var(--Rose-50);
+}
+
+.preparation-time h3 {
+   color: var(--Rose-800);
+   margin-bottom: .75rem;
+}
+
+.preparation-time ul {
+   color: var(--Stone-600);
+   font-size: .8125rem;
+   line-height: 1.5;
+   padding: 0 1.5rem;
+}
+
+.preparation-time ul li {
+   padding-left: 0.75rem;
+}
+
+.preparation-time ul li::marker {
+   color: var(--Rose-800);
+}
+
+.preparation-time h3 {
+   color: var(--Rose-800);
+   margin-bottom: .75rem;
+}
+
+.ingredients ul {
+   color: var(--Stone-600);
+   font-size: .8125rem;
+   line-height: 1.5;
+   padding: 0 1.25rem;
+   margin-bottom: 2rem;
+}
+
+.ingredients ul li {
+   padding-left: 0.75rem;
+}
+
+.ingredients ul li::marker {
+   color: var(--Brown-800);
+}
+
+.instructions ol {
+   color: var(--Stone-600);
+   font-size: .8125rem;
+   line-height: 1.5;
+   padding: 0 1.25rem;
+   margin-bottom: 2rem;
+}
+
+.instructions ol li {
+   padding-left: 0.75rem;
+}
+
+.instructions ol li::marker {
+   color: var(--Brown-800);
+   font-weight: 600;
+}
+
+.nutrition {
+   color: var(--Stone-600);
+   font-size: .8125rem;
+   line-height: 1.5;
+   padding: 1.5rem 0;
+}
+
+.nutrition table {
+   table-layout: fixed;
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 1.5rem;
+   margin-top: 1rem;
+
+}
+
+
+.nutrition table th,
+td {
+   border-bottom: 1px solid var(--Stone-150);
+   text-align: left;
+   vertical-align: top;
+   width: 5rem;
+   padding: .5rem 1rem;
+}
+
+.nutrition table td:nth-child(even) {
+   color: var(--Brown-800);
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 320px) and (max-width:600px) {
+   body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: var(--White);
+   }
+
+   .container {
+      padding: 0;
+      margin: 0;
+   }
+
+   .container img {
+      border-radius: 0;
+   }
+
+   .description,
+   .preparation-time,
+   .ingredients,
+   .instructions,
+   .nutrition,
+   hr {
+      margin: 2rem;
+   }
+}
